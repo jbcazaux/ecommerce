@@ -1,0 +1,12 @@
+{
+  "app": {
+    "title": "E-commerce Store",
+    "welcome": "Welcome to our store",
+    "navigation": {
+      "home": "Home",
+      "products": "Products",
+      "cart": "Cart",
+      "account": "Account"
+    }
+  }
+}
