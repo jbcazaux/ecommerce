@@ -11,8 +11,8 @@ export const metadata: Metadata = {
   title: 'E-commerce App',
   description: 'E commerce app AI generated',
   icons: {
-    icon: '/favicon.ico'
-  }
+    icon: '/favicon.ico',
+  },
 }
 
 type Props = {
@@ -31,9 +31,6 @@ const LocaleLayout = async ({ children, params }: Props) => {
 
   return (
     <html lang={locale}>
-      <head>
-        <link rel="icon" href="/favicon.ico" sizes="any" />
-      </head>
       <body>{children}</body>
     </html>
   )

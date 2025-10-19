@@ -35,8 +35,7 @@ a {
   text-decoration: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+*:focus-visible:not(input) {
+  outline: 2px solid pink;
+  outline-offset: 2px;
 }
