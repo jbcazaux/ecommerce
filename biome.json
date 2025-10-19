@@ -1,5 +1,23 @@
 {
   "$schema": "https://biomejs.dev/schemas/2.2.6/schema.json",
+  "assist": {
+    "actions": {
+      "source": {
+        "organizeImports": {
+          "level": "on",
+          "options": {
+            "groups": [
+              ":PACKAGE:",
+              ":BLANK_LINE:",
+              ":ALIAS:",
+              ":BLANK_LINE:",
+              "PATH"
+            ]
+          }
+        }
+      }
+    }
+  },
   "vcs": {
     "enabled": true,
     "clientKind": "git",
@@ -40,6 +58,10 @@
       "nursery": {
         "useConsistentArrowReturn": "error"
       },
+      "style": {
+        "useBlockStatements": "error",
+        "useConsistentCurlyBraces": "error"
+      },
       "suspicious": {
         "noConsole": "error"
       }
@@ -47,13 +69,6 @@
     "domains": {
       "next": "recommended",
       "react": "recommended"
-    }
-  },
-  "assist": {
-    "actions": {
-      "source": {
-        "organizeImports": "on"
-      }
     }
   }
 }
